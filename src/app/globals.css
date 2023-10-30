@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .heading-h1 {
+    @apply font-heading text-[40px] xs:text-[56px] font-bold leading-[4px] xs:leading-[56px] -tracking-[1.786px] xs:-tracking-[2.5px];
+  }
+  .heading-h2 {
+    @apply font-heading text-[48px] font-bold leading-[48px] -tracking-[2.143px];
+  }
+  .heading-h3 {
+    @apply font-heading text-[40px] font-bold leading-[48px] -tracking-[1.79px];
+  }
+  .heading-h4 {
+    @apply font-heading text-[24px] font-bold leading-[28px] -tracking-[1.07px];
+  }
+  .body {
+    @apply font-body text-[15px] font-normal leading-[25px];
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +42,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
