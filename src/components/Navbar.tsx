@@ -27,7 +27,9 @@ export default function Navbar() {
         <button className="md:hidden">
           <Hamburger />
         </button>
-        <Logo className="justify-self-center md:justify-self-start fill-dark-navy" />
+        <Link href="/">
+          <Logo className="justify-self-center md:justify-self-start fill-dark-navy" />
+        </Link>
         <ul className="hidden md:flex gap-8 ml-14">
           {menuItems.map(item => (
             <li key={item.id} className="text-dim-grey body !font-heading !font-bold">

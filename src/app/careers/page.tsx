@@ -37,8 +37,8 @@ export default function Careers({ params }: { params: { slug: string } }) {
         desktopSrc="/images/careers-locations-hero-desktop.jpg"
         title="Careers"
       />
-      <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto">
-        <section  className="w-full flex flex-col items-center justify-between gap-y-32 mt-32">
+      <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto my-16 lg:my-32">
+        <section  className="w-full flex flex-col items-center justify-between gap-y-32">
           <LargeCard 
             src="/images/join-us.jpg"
             title="Care to join our mission?"

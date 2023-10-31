@@ -73,8 +73,8 @@ export default function About({ params }: { params: { slug: string } }) {
         desktopSrc="/images/about-hero-desktop.jpg"
         title="About"
       />
-      <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto">
-        <section className="w-full flex flex-col items-center justify-between gap-y-32 mt-32">
+      <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto my-16 lg:my-32">
+        <section className="w-full flex flex-col items-center justify-between gap-y-32">
           <LargeCard 
             src="/images/digital-era.jpg"
             title="Mobility for the digital era"

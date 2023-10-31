@@ -28,7 +28,7 @@ const menuItems = [
 export default function Footer() {
   return (
     <footer>
-      <div className="relative overflow-hidden w-full bg-dark-navy mt-[120px] lg:mt-40">
+      <div className="relative overflow-hidden w-full bg-dark-navy">
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-y-10 max-w-[1110px] px-8 md:px-0 py-[88px] mx-auto">
           <h2 className="z-10 text-white heading-h2 text-center lg:text-left sm:w-[457px] mx-auto">Sign up and Scoot off today</h2>
           <div className="z-10 flex gap-x-3 mx-auto">
