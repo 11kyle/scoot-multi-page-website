@@ -7,7 +7,7 @@
     @apply font-heading text-[40px] xs:text-[56px] font-bold leading-[4px] xs:leading-[56px] -tracking-[1.786px] xs:-tracking-[2.5px];
   }
   .heading-h2 {
-    @apply font-heading text-[48px] font-bold leading-[48px] -tracking-[2.143px];
+    @apply font-heading text-[32px] md:text-[48px] font-bold leading-[32px] md:leading-[48px] -tracking-[1.429px] md:-tracking-[2.143px];
   }
   .heading-h3 {
     @apply font-heading text-[40px] font-bold leading-[48px] -tracking-[1.79px];

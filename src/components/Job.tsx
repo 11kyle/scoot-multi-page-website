@@ -36,7 +36,7 @@ export default function Job() {
     <div className="w-full space-y-4 lg:space-y-6">
       {jobs.map(job => (
         <div key={job.id} className="flex flex-col md:flex-row items-center md:justify-between gap-4 w-full bg-snow p-8 pt-9">
-          <div className="flex flex-col gap-y-1 md:gap-y-2">
+          <div className="flex flex-col gap-y-1 md:gap-y-2 text-center md:text-left">
             <h5 className="text-dark-navy font-heading text-[18px] font-bold leading-[24px] -tracking-[0.804px]">{job.title}</h5>
             <p className="text-dark-navy font-body">{job.location}</p>
           </div>

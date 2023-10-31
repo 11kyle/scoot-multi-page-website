@@ -11,7 +11,7 @@ export default function Hamburger({...props}: IconProps) {
     >
       <g 
         fill="#FCB72B" 
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <path 
           d="M0 0h19.692v3.692H0zM0 6.154h19.692v3.692H0zM0 12.308h19.692V16H0z"

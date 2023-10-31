@@ -26,7 +26,7 @@ export default function Header({ mobileSrc, tabletSrc, desktopSrc, title }: Head
         <h2 className="text-white heading-h1">{title}</h2>
       </div>
       <div className="hidden md:block absolute top-1/2 -translate-y-1/2 -right-[31px]">
-        <Circles />
+        <Circles className="stroke-white fill-white" fill="#fff" />
       </div>
     </div>
   )
