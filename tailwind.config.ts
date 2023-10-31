@@ -23,7 +23,7 @@ const config: Config = {
       },
       fontFamily: {
         'heading': ['var(--font-space-mono)'],
-        'body': ['var(--font-lexend-deca)']
+        'body': ['var(--font-lexend-deca)'],
       },
       screens: {
         'xs': '376px',

@@ -19,7 +19,7 @@ export default function Header({ mobileSrc, tabletSrc, desktopSrc, title }: Head
           fill
           alt=""
           className="absolute inset-0 -z-10 object-cover"
-          
+          priority
         />
       </picture>
       <div className="lg:h-full lg:flex lg:flex-col lg:justify-center max-w-[1110px] md:px-24 lg:px-8 lg:mx-auto">

@@ -10,10 +10,10 @@
     @apply font-heading text-[32px] md:text-[48px] font-bold leading-[32px] md:leading-[48px] -tracking-[1.429px] md:-tracking-[2.143px];
   }
   .heading-h3 {
-    @apply font-heading text-[40px] font-bold leading-[48px] -tracking-[1.79px];
+    @apply font-heading text-[24px] md:text-[40px] font-bold leading-[28px] md:leading-[48px] -tracking-[1.071px] md:-tracking-[1.79px];
   }
   .heading-h4 {
-    @apply font-heading text-[24px] font-bold leading-[28px] -tracking-[1.07px];
+    @apply font-heading text-[18px] md:text-[24px] font-bold leading-[24px] md:leading-[28px] -tracking-[0.804px] md:-tracking-[1.07px];
   }
   .body {
     @apply font-body text-[15px] font-normal leading-[25px];
