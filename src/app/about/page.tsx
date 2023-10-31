@@ -3,7 +3,9 @@ import Faq from '@/components/Faq'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import LargeCard from '@/components/LargeCard'
 import Navbar from '@/components/Navbar'
+import LeftUpwardArrow from '@/components/icons/patterns/left-upward-arrow'
 
 const items = [
   {
@@ -72,6 +74,23 @@ export default function About({ params }: { params: { slug: string } }) {
         title="About"
       />
       <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto">
+        <section className="w-full flex flex-col items-center justify-between gap-y-32 mt-32">
+          <LargeCard 
+            src="/images/digital-era.jpg"
+            title="Mobility for the digital era"
+            description="Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips."
+            direction="right"
+          >
+            <div className="absolute left-0 bottom-5 md:-left-1/4 z-10">
+              <LeftUpwardArrow />
+            </div>
+          </LargeCard>
+          <LargeCard 
+            src="/images/better-living.jpg"
+            title="Better urban living"
+            description="We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride."
+          />
+        </section>
         <section>
           <div className="space-y-16 lg:space-y-24">
             <h3 className="text-dark-navy heading-h2 text-center">Our values</h3>

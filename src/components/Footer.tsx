@@ -5,7 +5,7 @@ import Logo from "./icons/logo";
 import Facebook from "./icons/facebook";
 import Twitter from "./icons/twitter";
 import Instagram from "./icons/instagram";
-import Circles from "./icons/patterns/circles";
+import SemiCircles from "./icons/patterns/semi-circles";
 
 const menuItems = [
   {
@@ -37,8 +37,8 @@ export default function Footer() {
           </div>
           
         </div>
-        <div className="absolute -bottom-[200px] -right-[174px]">
-          <Circles className="w-[1153px] h-[347px] stroke-dim-grey" fill="#939CAA" />
+        <div className="absolute bottom-0 -right-[173.5px]">
+          <SemiCircles />
         </div>
       </div>
       <div className="w-full md:h-24 bg-[#333A44]">
