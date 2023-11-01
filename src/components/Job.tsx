@@ -1,3 +1,5 @@
+import { Button } from "./Button"
+
 const jobs = [
   {
     id: 0,
@@ -40,7 +42,7 @@ export default function Job() {
             <h5 className="text-dark-navy font-heading text-[18px] font-bold leading-[24px] -tracking-[0.804px]">{job.title}</h5>
             <p className="text-dark-navy font-body">{job.location}</p>
           </div>
-          <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold">Apply</button>
+          <Button>Apply</Button>
         </div>
       ))}
     </div>

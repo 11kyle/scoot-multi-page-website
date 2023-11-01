@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RightArrow from "./icons/patterns/right-arrow";
+import { Button } from "./Button";
 
 type CardProps = {
   src: string
@@ -7,9 +8,11 @@ type CardProps = {
   description: string
   direction?: "right" | "left"
   children?: React.ReactNode
+  btn?: boolean
+  btnText?: string
 }
 
- export default function LargeCard({ src, title, description, direction = "left", children }: CardProps) {
+ export default function LargeCard({ src, title, description, direction = "left", children, btn = true, btnText = "Learn More" }: CardProps) {
   return (
     <>
       {direction === "left"
@@ -32,7 +35,9 @@ type CardProps = {
             <div className="flex flex-col items-center lg:items-start gap-y-8 md:gap-y-10 lg:gap-y-0 text-center lg:text-left lg:max-w-[445px] lg:justify-self-end">
               <h4 className="text-dark-navy heading-h2 max-w-[457px] lg:mb-6">{title}</h4>
               <p className="text-dim-grey body lg:mb-10">{description}</p>
-              <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold">Learn More</button>
+              {btn && (
+                <Button>{btnText}</Button>
+              )}
             </div>
           </div>
         ) : (
@@ -52,7 +57,9 @@ type CardProps = {
             <div className="lg:order-1 flex flex-col items-center lg:items-start gap-y-8 md:gap-y-10 lg:gap-y-0 text-center lg:text-left lg:max-w-[445px]">
               <h4 className="text-dark-navy heading-h2 max-w-[457px] lg:mb-6">{title}</h4>
               <p className="text-dim-grey body lg:mb-10">{description}</p>
-              <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold">Learn More</button>
+              {btn && (
+                <Button>{btnText}</Button>
+              )}
             </div>
           </div>
         )

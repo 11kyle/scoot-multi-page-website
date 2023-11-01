@@ -2,13 +2,7 @@ import Image from "next/image"
 import Circles from "./icons/patterns/circles"
 import RightArrow from "./icons/patterns/right-arrow"
 import Line from "./icons/patterns/line"
-
-type HeaderProps = {
-  mobileSrc: string
-  tabletSrc: string
-  desktopSrc: string
-  title?: string
-}
+import { Button } from "./Button"
 
 export default function Hero() {
   return (
@@ -28,9 +22,9 @@ export default function Hero() {
         <h2 className="text-white heading-h1 max-w-[573px] lg:w-[500px]">Scooter sharing made simple</h2>
         <p className="text-white body mt-6 mb-8 max-w-[573px] lg:w-[405px] lg:ml-24">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
         <div className="relative">
-          <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold lg:ml-24">
+          <Button className="lg:ml-24">
             Get Scootin
-          </button>
+          </Button>
           <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-1/2">
             <Line />
           </div>

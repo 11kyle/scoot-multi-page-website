@@ -80,6 +80,7 @@ export default function About({ params }: { params: { slug: string } }) {
             title="Mobility for the digital era"
             description="Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips."
             direction="right"
+            btn={false}
           >
             <div className="absolute left-0 bottom-5 md:-left-1/4 z-10">
               <LeftUpwardArrow />
@@ -89,6 +90,7 @@ export default function About({ params }: { params: { slug: string } }) {
             src="/images/better-living.jpg"
             title="Better urban living"
             description="We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride."
+            btn={false}
           />
         </section>
         <section>

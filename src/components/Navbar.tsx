@@ -1,6 +1,8 @@
 import Link from "next/link"
 import Hamburger from "./icons/hamburger"
 import Logo from "./icons/logo"
+import MenuItem from "./MenuItem"
+import { Button } from "./Button"
 
 const menuItems = [
   {
@@ -32,16 +34,16 @@ export default function Navbar() {
         </Link>
         <ul className="hidden md:flex gap-8 ml-14">
           {menuItems.map(item => (
-            <li key={item.id} className="text-dim-grey body !font-heading !font-bold">
+            <MenuItem key={item.id}>
               <Link href={item.href}>
                 {item.value}
               </Link>
-            </li>
+            </MenuItem>
           ))}
         </ul>
-        <button className="hidden md:block w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold ml-auto">
+        <Button className="ml-auto">
           Get Scootin
-        </button>
+        </Button>
       </div>
     </nav>
   )

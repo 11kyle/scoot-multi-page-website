@@ -44,6 +44,7 @@ export default function Careers({ params }: { params: { slug: string } }) {
             title="Care to join our mission?"
             description="We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!"
             direction="right"
+            btnText="Say Hello"
           >
             <div className="absolute left-0 bottom-0 z-10">
               <LeftDownwardArrow />

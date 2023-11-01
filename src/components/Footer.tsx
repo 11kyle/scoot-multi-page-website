@@ -6,6 +6,7 @@ import Facebook from "./icons/facebook";
 import Twitter from "./icons/twitter";
 import Instagram from "./icons/instagram";
 import SemiCircles from "./icons/patterns/semi-circles";
+import MenuItem from "./MenuItem";
 
 const menuItems = [
   {
@@ -46,16 +47,16 @@ export default function Footer() {
           <Logo className="fill-white md:mr-14" />
           <ul className="flex flex-col md:flex-row items-center gap-y-4 md:gap-x-8 mt-10 mb-[85px] md:m-0">
             {menuItems.map(item => (
-              <li key={item.id} className="text-dim-grey body">
+              <MenuItem key={item.id}>
                 <Link href={item.href}>{item.value}</Link>
-              </li>
+              </MenuItem>
             ))}
           </ul>
           <div className="md:ml-auto">
             <ul className="flex items-center gap-x-6">
-              <li><Facebook /></li>
-              <li><Twitter /></li>
-              <li><Instagram /></li>
+              <li><Link href="#"><Facebook className="fill-yellow hover:fill-white" /></Link></li>
+              <li><Link href="#"><Twitter className="fill-yellow hover:fill-white" /></Link></li>
+              <li><Link href="#"><Instagram className="fill-yellow hover:fill-white" /></Link></li>
             </ul>
           </div>
         </div>
