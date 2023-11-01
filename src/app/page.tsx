@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import LargeCard from '@/components/LargeCard'
 import Navbar from '@/components/Navbar'
 import LeftDownwardArrow from '@/components/icons/patterns/left-downward-arrow'
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Hero />
       <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto my-16 lg:my-32">
         <LargeCard 
           src="/images/telemetry.jpg"
