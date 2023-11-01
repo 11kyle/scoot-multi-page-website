@@ -1,17 +1,41 @@
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import LargeCard from '@/components/LargeCard'
 import Navbar from '@/components/Navbar'
+import SmallCard from '@/components/SmallCard'
+import HorizontalLine from '@/components/icons/patterns/horizontal-line'
 import LeftDownwardArrow from '@/components/icons/patterns/left-downward-arrow'
-import Image from 'next/image'
+import VerticalLine from '@/components/icons/patterns/vertical-line'
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <main className="flex max-w-[1110px] min-h-screen flex-col items-center justify-between gap-y-32 p-8 mx-auto my-16 lg:my-32">
+      <main className="flex max-w-[1110px] min-h-screen flex-col items-center gap-y-32 p-8 mx-auto my-16 lg:my-32">
+        <section className="relative flex flex-col lg:flex-row justify-between gap-y-12 w-full">
+          <SmallCard 
+            title="Locate with app"
+            description="Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. "
+            icon="locate"
+          />
+          <SmallCard 
+            title="Pick your scooter"
+            description="We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost."
+            icon="scooter"
+          />
+          <SmallCard 
+            title="Enjoy the ride"
+            description="Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps."
+            icon="ride"
+          />
+          <div className="-z-10 hidden md:block lg:hidden absolute md:-top-[120px] md:left-[42px]">
+            <VerticalLine />
+          </div>
+          <div className="-z-10 hidden lg:block absolute top-[42px] right-[300px]">
+            <HorizontalLine />
+          </div>
+        </section>
         <LargeCard 
           src="/images/telemetry.jpg"
           title="Easy to use riding telemetry"

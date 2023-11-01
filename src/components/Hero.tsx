@@ -27,18 +27,23 @@ export default function Hero() {
       <div className="lg:h-full lg:justify-center flex flex-col items-center lg:items-start text-center lg:text-left max-w-[1110px] px-8 md:px-24 lg:px-8 lg:mx-auto">
         <h2 className="text-white heading-h1 max-w-[573px] lg:w-[500px]">Scooter sharing made simple</h2>
         <p className="text-white body mt-6 mb-8 max-w-[573px] lg:w-[405px] lg:ml-24">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
-        <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold lg:ml-24">
-          Get Scootin
-        </button>
+        <div className="relative">
+          <button className="w-[180px] h-[53px] bg-yellow text-white body !font-heading !font-bold lg:ml-24">
+            Get Scootin
+          </button>
+          <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-1/2">
+            <Line />
+          </div>
+          <div className="hidden lg:block absolute lg:top-1/2 -translate-y-[8px] lg:left-full translate-x-[30px]">
+            <RightArrow />
+          </div>
+        </div>
       </div>
       <div className="hidden md:block absolute md:bottom-[45px] lg:bottom-[62px] -right-[31px]">
         <Circles className="stroke-white fill-white" fill="#fff" />
       </div>
-      <div className="hidden md:block absolute md:bottom-[30px] lg:bottom-[47px] left-[450px]">
+      <div className="hidden md:block lg:hidden absolute md:bottom-[30px] lg:bottom-[47px] lg:left-[450px]">
         <RightArrow />
-      </div>
-      <div className="hidden lg:block absolute bottom-[183px] -left-[40px]">
-        <Line />
       </div>
     </div>
   )
