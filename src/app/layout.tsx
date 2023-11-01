@@ -13,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${lexend_deca.variable} ${space_mono.variable} overflow-x-hidden`}>{children}</body>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${lexend_deca.variable} ${space_mono.variable} overflow-x-hidden`}>
+        {children}
+      </body>
     </html>
   )
 }

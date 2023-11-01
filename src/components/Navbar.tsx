@@ -29,8 +29,8 @@ export default function Navbar() {
         <button className="md:hidden">
           <Hamburger />
         </button>
-        <Link href="/">
-          <Logo className="justify-self-center md:justify-self-start fill-dark-navy" />
+        <Link href="/" className="place-self-center">
+          <Logo className="fill-dark-navy" />
         </Link>
         <ul className="hidden md:flex gap-8 ml-14">
           {menuItems.map(item => (
@@ -41,7 +41,7 @@ export default function Navbar() {
             </MenuItem>
           ))}
         </ul>
-        <Button className="ml-auto">
+        <Button className="hidden md:block ml-auto">
           Get Scootin
         </Button>
       </div>
