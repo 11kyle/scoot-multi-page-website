@@ -1,8 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import Hamburger from "./icons/hamburger"
 import Logo from "./icons/logo"
 import MenuItem from "./MenuItem"
 import { Button } from "./Button"
+import MobileNav from "./MobileNav"
+import { useState } from "react"
 
 const menuItems = [
   {
@@ -23,10 +27,13 @@ const menuItems = [
 ]
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false)
+
   return (
+    <>
     <nav>
       <div className="grid grid-cols-3 md:flex items-center h-16 md:h-24 max-w-[1110px] px-8 mx-auto">
-        <button className="md:hidden">
+        <button className="md:hidden w-fit" onClick={() => setOpen(true)}>
           <Hamburger />
         </button>
         <Link href="/" className="place-self-center">
@@ -46,5 +53,11 @@ export default function Navbar() {
         </Button>
       </div>
     </nav>
+    {/* Mobile Nav */}
+    <MobileNav 
+      open={open}
+      setOpen={setOpen}
+    />
+    </>
   )
 }
