@@ -56,5 +56,5 @@ CSS Grid - I super confident with Flexbox but still need to work with grids more
 
 ## Author
 
-- Website - [Kyle](https://www.your-site.com)
+- Website - [Kyle](https://11kyle.github.io/my-portfolio/)
 - Frontend Mentor - [@11kyle](https://www.frontendmentor.io/profile/11kyle)
