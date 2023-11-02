@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Scoot website
 
-## Getting Started
+## Table of contents
 
-First, run the development server:
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Challenges](#challenges)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Scoot website is a multi-page website. Built with a responsive, mobile-first layout. This website is pixel perfect.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Screenshot
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![](./scoot_desktop.png)
 
-## Learn More
+### Links
 
-To learn more about Next.js, take a look at the following resources:
+- Solution URL: [Repo](https://github.com/11kyle/scoot-multi-page-website)
+- Live Site URL: [Preview](https://scoot-multi-page-website-mu.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## My process
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
+- Semantic HTML5 markup
+- CSS (Tailwind)
+- Flexbox & Grid
+- Mobile-first workflow
+- [Figma] (https://figma.com/) - Design
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Headless UI](https://headlessui.com/) - Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Challenges
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Absolute position content on the right without overflow-x-hidden was causing the width to expand. I realized I needed to add overflow-x-hidden to the html and body tags.
+
+I had one of those pesky typo bugs. I had a line-height value of 4px instead of 40px.
+
+### Continued development
+
+CSS Grid - I super confident with Flexbox but still need to work with grids more.
+
+### Useful resources
+
+- [Stack Overflow](https://www.stackoverflow.com) - Possible the best overall place to get help from the community. You can find a solution to every problem you face and if not, post your own.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - MDN Web Docs are great for reminding you everything you forget. I often use it to look up attributes for html tags and JavaScript methods.
+- [Tailwind CSS](https://www.tailwindcss.com) - This is the documentation for TailwindCSS. It's always open when I use it as my CSS framework.
+
+## Author
+
+- Website - [Kyle](https://www.your-site.com)
+- Frontend Mentor - [@11kyle](https://www.frontendmentor.io/profile/11kyle)
